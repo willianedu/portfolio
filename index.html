@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
+
+
+    <script src="menu.js" defer></script>
+
+    <title>Willian Portfólio</title>
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="logo">2
+                <a href="index.html">
+                    <img src="images/Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#topo">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#formulario">
+                    <button>Contato</button>
+                </a>
+            </div>
+    </header>
+
+    <main>
+        <section id = "topo"class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Olá!</h1>
+                        <h1>Meu nome é<span> Willian!</span></h1>
+                        <p>Neste site você verá algumas de minhas especialidades, saberá um pouco sobre mim e também de projetos que já participei. Com isso, caso tenha interesse pode entrar em contato, basta apertar no botão de contato, preencher o formulário e enviar. Além disso, pode me encontrar nas outras redes sociais, como github ou linkedin ou email, basta apertar nos respectivos icones/endereços no fim da pagina.</p>
+
+                        <div class="btn-contato">
+                            <a href="#formulario">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-topo-site">
+                        <img src="images/fotoCirculo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "especialidades"class="especiliadades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Front-End</h3>
+                        <p>Tenho conhecimentos intermediários de Html,Css e javascript e também, já cheguei a utilizar frameworks como o Bootstrap e o Angular em alguns projetos anteriores.</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-modem"></i>
+                        <h3>Redes</h3>
+                        <p>Já trabalhei como auxiliar de centro de processamento de dados e também de suporte em geral, portanto tenho um conhecimento intermediário de infraestrutura de redes em um âmbito empresarial.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-java"></i>
+                        <h3>Back-End</h3>
+                        <p>No Back-End, minha maior especialidade é na linguagem de programação java, utilizando o framework SpringBoot, já fiz alguns projetos, onde podem ser encontrados em meu repositório.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "sobre"class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto.jpeg" alt="">
+                    </div>
+
+                    <div class="txt-sobre">
+                        <h2>Muito prazer, <span>Sou Willian Eduardo.</span></h2>
+                        <p>Sou estudante de engenharia de software na faculdade UNIFAN, atualmente estou no quinto período, e também trabalho como auxíliar na parte de infraestrutura de redes na faculdade.</p>
+                        <p>Tenho bastante interesse em sempre aprender e melhorar minhas habilidades. Para entrar em contato basta apertar em alguma rede social abaixo, ou fazer o formulário no fim da pagina, estarei no aguardo do contato!</p>
+                        <div class="btn-social">
+                            <a href="https://github.com/willianedu"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://br.linkedin.com/in/willian-eduardo-alves-vaz-117010243"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "projetos"class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/SpringBoot.png);">
+                        <div class="overlay">CRUD SpringBoot Web</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/Game.png);">
+                        <div class="overlay">Game Warrior Jump</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/FrontEnd.png);">
+                        <div class="overlay">Login com Html,css e JS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "formulario" class="formulario">
+            <div class="interface">
+                <h2 class="titulo">Entre em <span>Contato</span></h2>
+
+                <form id="myForm">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="text" name="celular" id="celular" placeholder="Seu celular:">
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/Logo.png" alt="Logo">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://github.com/willianedu"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://br.linkedin.com/in/willian-eduardo-alves-vaz-117010243"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:willianeduardo9877@hotmail.com">willianeduardo9877@hotmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
